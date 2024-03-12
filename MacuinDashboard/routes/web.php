@@ -17,5 +17,24 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/crearTicket', function () {
+    return view('cliente/crearTicket');
+});
+
+
+Route::get('/consultarTicket', function () {
+    return view('cliente/consultarTicket');
+});
+
+Route::get('/eliminarTicket', function () {
+    return view('cliente/eliminarTicket');
+});
+
+Route::get('/editarCliente', function () {
+    return view('cliente/editarCliente');
+});
+
+
+
 
 
