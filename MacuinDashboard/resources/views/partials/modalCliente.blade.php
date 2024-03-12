@@ -7,9 +7,9 @@
             <h2 class="text-xl font-semibold text-purple-500">Tickets</h2>
         </div>
         <ul class="text-center">
-            <li class="mb-2"><a href="#" class="text-gray-700 hover:text-purple-500">Consultar Ticket</a></li>
-            <li class="mb-2"><a href="#" class="text-gray-700 hover:text-purple-500">Nuevo Ticket</a></li>
-            <li><a href="#" class="text-gray-700 hover:text-purple-500">Eliminar Ticket</a></li>
+            <li class="mb-2"><a href="/consultarTicket" class="text-gray-700 hover:text-purple-500">Consultar Ticket</a></li>
+            <li class="mb-2"><a href="/crearTicket" class="text-gray-700 hover:text-purple-500">Nuevo Ticket</a></li>
+            <li><a href="/eliminarTicket" class="text-gray-700 hover:text-purple-500">Eliminar Ticket</a></li>
         </ul>
     </div>
 </div>

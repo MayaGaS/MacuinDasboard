@@ -7,7 +7,7 @@
             <h2 class="text-xl font-semibold text-purple-500">Administración de mi perfil</h2>
         </div>
         <ul class="text-center">
-            <li class="mb-2 text-center"><a href="#" class="text-gray-700 hover:text-purple-500">Editar mis datos personales</a></li>
+            <li class="mb-2 text-center"><a href="/editarCliente" class="text-gray-700 hover:text-purple-500">Editar mis datos personales</a></li>
             <li class="mb-2 text-center"><a href="#" class="text-gray-700 hover:text-purple-500">Privacidad</a></li>
             <li class="mb-2 text-center"><a href="#" class="text-gray-700 hover:text-purple-500">Configuración de mi cuenta</a></li>
         </ul>
