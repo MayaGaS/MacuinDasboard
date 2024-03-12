@@ -34,6 +34,17 @@ Route::get('/editarCliente', function () {
     return view('cliente/editarCliente');
 });
 
+Route::get('/crearTicketM', function () {
+    return view('cliente/crearTicket')->with('mensaje', '$mensaje');
+});
+
+Route::get('/editarClienteM', function () {
+    return view('cliente/editarCliente')->with('mensaje', '$mensaje');
+});
+
+Route::get('/eliminarTicketM', function () {
+    return view('cliente/eliminarTicket')->with('mensaje', '$mensaje');
+});
 
 
 

@@ -4,14 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <title>Cancelar Tickets</title>
 </head>
 <body class="bg-white-200">
     @include('partials/navbar')
     @include('partials/modalCliente')
     @include('partials/modalAdminPerfil')
+
+    <script>
+      @if(isset($mensaje))
+          Swal.fire({
+              position: "top-end",
+              icon: "success",
+              title: "Ticket eliminado",
+              showConfirmButton: false,
+              timer: 1500
+          });
+      @endif
+  </script>
+  
+
     <div class="flex justify-center mt-8">
-        <form class="bg-gray-100 p-6 rounded-lg w-96">
+        <form  action="/eliminarTicketM" class="bg-gray-100 p-6 rounded-lg w-96">
           <h2 class="text-xl mb-4">Cancelar Tickets</h2>
           
           <div class="mb-4">

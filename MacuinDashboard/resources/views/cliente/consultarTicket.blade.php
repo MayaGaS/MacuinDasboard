@@ -15,6 +15,7 @@
         </header>
         <div class="bg-white rounded-lg p-4 shadow-md">
             <h1 class="text-xl font-semibold text-black">Consultar Ticket</h1>
+            <form class="bg-gray-100 p-6 rounded-lg w-96">
             <div class="mb-4">
                 <input type="text" placeholder="Buscar" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" required>
                 <button class="ml-2 px-4 py-2 bg-purple-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">Buscar</button>
@@ -29,11 +30,12 @@
                     <p class="text-sm text-gray-600">Departamento: <span class="font-semibold">Soporte Técnico</span></p>
                     <!-- ... Other fields ... -->
                     <!-- Button -->
-                    <button class="mt-2 px-4 py-2 bg-purple-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">Abrir</button>
+                    <button type="submit" class="mt-2 px-4 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-600 focus:outline-none focus:ring focus:border-purple-300">Abrir</button>
                 </div>
                 <!-- Ticket Card 2 (similar structure) -->
                 <!-- ... -->
             </div>
+            </form>
         </div>
     </div>
 </body>

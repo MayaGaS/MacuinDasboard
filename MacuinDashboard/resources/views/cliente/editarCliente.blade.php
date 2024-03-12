@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Editar Usuario</title>
 </head>
 <body>
@@ -11,10 +12,23 @@
     @include('partials/modalCliente')
     @include('partials/modalAdminPerfil')
 
+    <script>
+        @if(isset($mensaje))
+            Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "Usuario editado",
+                showConfirmButton: false,
+                timer: 1500
+            });
+        @endif
+    </script>
+    
+
     <div class="flex justify-center mt-8">
         <div class="bg-white p-8 rounded-md shadow-md">
             <h1 class="text-xl font-semibold text-black mb-4">Editar Usuario</h1>
-
+            <form action="/editarClienteM" class="bg-gray-100 p-6 rounded-lg w-96">
 {{--             <form action="{{ route('usuario.update', $usuario->id) }}" method="POST" class="space-y-4">
                 @csrf
                 @method('PUT') --}}
