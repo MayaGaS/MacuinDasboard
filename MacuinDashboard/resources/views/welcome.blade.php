@@ -8,6 +8,10 @@
     <script src='https://cdn.tailwindcss.com'></script>
 </head>
 <body>
-    @include('partials/navbar')
+    <div>
+        @include('partials/navbar')
+        @include('partials/modalCliente')
+        @include('partials/modalAdminPerfil')
+    </div>
 </body>
 </html>
