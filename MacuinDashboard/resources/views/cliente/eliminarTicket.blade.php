@@ -15,7 +15,7 @@
     <script>
       @if(isset($mensaje))
           Swal.fire({
-              position: "top-end",
+              position: "center",
               icon: "success",
               title: "Ticket eliminado",
               showConfirmButton: false,
@@ -32,21 +32,23 @@
           <div class="mb-4">
             <label for="ticketNumber" class="sr-only">No.Ticket</label>
             <input type="text" id="ticketNumber" name="ticketNumber" placeholder="No.Ticket" 
-                   class="bg-white border rounded-lg w-full p-2" required>
+                  class="bg-white border rounded-lg w-full p-2" required>
           </div>
       
           <div class="mb-4">
             <label for="date" class="sr-only">Fecha</label>
             <input type="date" id ="date" name ="date"
-                   class ="bg-white border rounded-lg w-full p-2" required>
+                  class ="bg-white border rounded-lg w-full p-2" required>
           </div>
       
           <!-- Agrega más campos de entrada según sea necesario -->
       
-          <button type ="submit"
-                  class ="bg-purple-500 text-white rounded-lg px-4 py-2 mt -4 hover:bg-red -600 focus:outline-none focus:border-red -700 focus:ring focus:ring-red -200 active:bg-red -700"
-                  >Cancelar</button>
+          <div class="flex justify-center"> <!-- Centra el botón -->
+            <button type ="submit"
+                    class ="bg-purple-500 text-white rounded-lg px-4 py-2 mt -4 hover:bg-red -600 focus:outline-none focus:border-red -700 focus:ring focus:ring-red -200 active:bg-red -700"
+                    >Cancelar</button>
+          </div>
         </form>
       </div>
     </body>
-    </html>   
+    </html>

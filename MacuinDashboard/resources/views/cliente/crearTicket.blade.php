@@ -15,7 +15,7 @@
     <script>
         @if(isset($mensaje))
             Swal.fire({
-                position: "top-end",
+                position: "center",
                 icon: "success",
                 title: "Ticket creado",
                 showConfirmButton: false,
@@ -31,13 +31,11 @@
                 <div class="text-sm text-gray-600">Fecha: <span class="font-semibold">12/03/2024</span></div>
             </div>
 
-{{--             <form action="{{ route('ticket.store') }}" method="POST" class="space-y-4">
-                @csrf --}}
             <form action="/crearTicketM" class="bg-gray-100 p-6 rounded-lg w-80">
                 <!-- Departamento -->
-                <div>
+                <div class="mb-4">
                     <label for="departamento" class="block text-sm font-medium text-gray-600">Departamento:</label>
-                    <select id="departamento" name="departamento" class="form-select w-full" required>
+                    <select id="departamento" name="departamento" class="form-select w-full rounded-md" required>
                         <option value="soporte">Soporte Técnico</option>
                         <option value="ventas">Ventas</option>
                         <!-- Agregar más opciones según sea necesario -->
@@ -45,9 +43,9 @@
                 </div>
 
                 <!-- Clasificación -->
-                <div>
+                <div class="mb-4">
                     <label for="clasificacion" class="block text-sm font-medium text-gray-600">Clasificación:</label>
-                    <select id="clasificacion" name="clasificacion" class="form-select w-full" required>
+                    <select id="clasificacion" name="clasificacion" class="form-select w-full rounded-md" required>
                         <option value="alta">Alta</option>
                         <option value="media">Media</option>
                         <option value="baja">Baja</option>
@@ -56,15 +54,15 @@
                 </div>
 
                 <!-- Detalle -->
-                <div>
+                <div class="mb-4">
                     <label for="detalle" class="block text-sm font-medium text-gray-600">Detalle:</label>
-                    <textarea id="detalle" name="detalle" rows="3" class="form-textarea w-full" required></textarea>
+                    <textarea id="detalle" name="detalle" rows="3" class="form-textarea w-full rounded-md" required></textarea>
                 </div>
 
                 <!-- Estado/Status -->
-                <div>
+                <div class="mb-4">
                     <label for="status" class="block text-sm font-medium text-gray-600">Status:</label>
-                    <select id="status" name="status" class="form-select w-full" required>
+                    <select id="status" name="status" class="form-select w-full rounded-md" required>
                         <option value="abierto">Abierto</option>
                         <option value="en_proceso">En Proceso</option>
                         <option value="cerrado">Cerrado</option>
@@ -73,7 +71,7 @@
                 </div>
 
                 <!-- Botones Cancelar y Guardar -->
-                <div class="flex justify-end">
+                <div class="flex justify-center">
                     <button type="submit" class="px-4 py-2 mr-2 bg-gray-300 text-gray-600 rounded-md hover:bg-gray-400 focus:outline-none focus:ring focus:border-blue-300">Cancelar</button>
                     <button type="submit" class="px-4 py-2 bg-purple-500 text-white rounded-md hover:bg-purple-700 focus:outline-none focus:ring focus:border-blue-300">Guardar</button>
                 </div>

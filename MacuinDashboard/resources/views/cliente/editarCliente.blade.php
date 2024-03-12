@@ -6,6 +6,16 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <title>Editar Usuario</title>
+    <style>
+        /* Agregar estilos personalizados */
+        .rounded-form {
+            border-radius: 20px;
+            background-color: #8A2BE2; /* Morado */
+        }
+        .rounded-input {
+            border-radius: 15px;
+        }
+    </style>
 </head>
 <body>
     @include('partials/navbar')
@@ -15,7 +25,7 @@
     <script>
         @if(isset($mensaje))
             Swal.fire({
-                position: "top-end",
+                position: "center",
                 icon: "success",
                 title: "Usuario editado",
                 showConfirmButton: false,
@@ -23,15 +33,11 @@
             });
         @endif
     </script>
-    
 
     <div class="flex justify-center mt-8">
         <div class="bg-white p-8 rounded-md shadow-md">
             <h1 class="text-xl font-semibold text-black mb-4">Editar Usuario</h1>
-            <form action="/editarClienteM" class="bg-gray-100 p-6 rounded-lg w-96">
-{{--             <form action="{{ route('usuario.update', $usuario->id) }}" method="POST" class="space-y-4">
-                @csrf
-                @method('PUT') --}}
+            <form action="/editarClienteM" class="bg-gray-100 p-6 rounded-lg w-96 rounded-form">
 
                 <!-- Nombre -->
                 <div class="flex items-center space-x-4">
@@ -40,7 +46,7 @@
                     </div>
                     <div class="w-3/4">
                         <div class="relative">
-                            <input type="text" id="nombre" name="nombre" {{-- value="{{ $usuario->nombre }}" --}} class="form-input w-full" required>
+                            <input type="text" id="nombre" name="nombre" class="form-input w-full rounded-input" required>
                             <div class="absolute right-0 top-0 mt-2 mr-2">
                                 <i class="fas fa-user text-gray-400"></i>
                             </div>
@@ -55,7 +61,7 @@
                     </div>
                     <div class="w-3/4">
                         <div class="relative">
-                            <input type="email" id="email" name="email" {{-- value="{{ $usuario->email }}"  --}}class="form-input w-full" required>
+                            <input type="email" id="email" name="email" class="form-input w-full rounded-input" required>
                             <div class="absolute right-0 top-0 mt-2 mr-2">
                                 <i class="fas fa-envelope text-gray-400"></i>
                             </div>
@@ -70,7 +76,7 @@
                     </div>
                     <div class="w-3/4">
                         <div class="relative">
-                            <input type="password" id="password" name="password" class="form-input w-full" required>
+                            <input type="password" id="password" name="password" class="form-input w-full rounded-input" required>
                             <div class="absolute right-0 top-0 mt-2 mr-2">
                                 <i class="fas fa-lock text-gray-400"></i>
                             </div>
@@ -79,7 +85,7 @@
                 </div>
 
                 <!-- Botón Guardar Cambios -->
-                <div class="mt-6">
+                <div class="mt-6 text-center">
                     <button type="submit" class="bg-purple-500 text-white px-4 py-2 rounded hover:bg-purple-700 focus:outline-none focus:ring focus:border-blue-300">Guardar Cambios</button>
                 </div>
             </form>
