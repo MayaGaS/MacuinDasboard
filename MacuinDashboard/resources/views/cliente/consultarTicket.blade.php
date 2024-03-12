@@ -8,13 +8,15 @@
 </head>
 <body>
     @include('partials/navbar')
-    <div class="flex justify-end">
+    @include('partials/modalCliente')
+    @include('partials/modalAdminPerfil')
+    <div class="flex justify-center mt-8">
         <header class="flex items-center justify-between mb-4"> {{-- w-full p-4 bg-white rounded-lg shadow-md --}}
         </header>
         <div class="bg-white rounded-lg p-4 shadow-md">
             <h1 class="text-xl font-semibold text-black">Consultar Ticket</h1>
             <div class="mb-4">
-                <input type="text" placeholder="Buscar" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300">
+                <input type="text" placeholder="Buscar" class="w-full px-3 py-2 border rounded-md focus:outline-none focus:ring focus:border-blue-300" required>
                 <button class="ml-2 px-4 py-2 bg-purple-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">Buscar</button>
             </div>
             <div class="space-y-4">

@@ -6,22 +6,24 @@
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <title>Cancelar Tickets</title>
 </head>
-<body class="bg-gray-200">
+<body class="bg-white-200">
     @include('partials/navbar')
-    <div class="flex justify-end">
+    @include('partials/modalCliente')
+    @include('partials/modalAdminPerfil')
+    <div class="flex justify-center mt-8">
         <form class="bg-gray-100 p-6 rounded-lg w-96">
           <h2 class="text-xl mb-4">Cancelar Tickets</h2>
           
           <div class="mb-4">
             <label for="ticketNumber" class="sr-only">No.Ticket</label>
             <input type="text" id="ticketNumber" name="ticketNumber" placeholder="No.Ticket" 
-                   class="bg-white border rounded-lg w-full p-2">
+                   class="bg-white border rounded-lg w-full p-2" required>
           </div>
       
           <div class="mb-4">
             <label for="date" class="sr-only">Fecha</label>
             <input type="date" id ="date" name ="date"
-                   class ="bg-white border rounded-lg w-full p-2">
+                   class ="bg-white border rounded-lg w-full p-2" required>
           </div>
       
           <!-- Agrega más campos de entrada según sea necesario -->
