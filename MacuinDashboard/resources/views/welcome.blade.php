@@ -10,7 +10,7 @@
 <body>
     <div>
         @include('partials/navbar')
-        <--@include('partials/modalCliente')
+        @include('partials/modalCliente')
         @include('partials/modalAdminPerfil')
     </div>
 </body>

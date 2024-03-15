@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div class="bg-purple-600 text-white p-4 flex justify-between items-center">
+    <div class="bg-purple-500 text-white p-4 flex justify-between items-center">
     <div class="flex items-center">
         <div class="relative">
         <!-- Icono de tres rayas -->
@@ -38,7 +38,7 @@
             class="hidden absolute "
         >
             <div class="py-1" role="none">
-        @include('partials/modalCliente')
+                @include('partials/modalCliente')
             </div>
         </div>
         </div>
@@ -98,7 +98,7 @@
             aria-labelledby="options-menu"
         >
             </form>
-            @include('partials/modalAdminPerfil')
+                @include('partials/modalAdminPerfil')
             </div>
         </div>
         </div>
