@@ -9,8 +9,7 @@
 </head>
 <body>
     @include('partials/navbar')
-<!--  @include('partials/modalCliente')
-    @include('partials/modalAdminPerfil') -->
+
 
     <script>
         @if(isset($mensaje))
